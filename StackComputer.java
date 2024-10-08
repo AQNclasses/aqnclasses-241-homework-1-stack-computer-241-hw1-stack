@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 /**
@@ -49,7 +50,7 @@ public class StackComputer {
      */
     public void push(int value) throws StackException {
         if (counter == maxsize) {
-            throw new StackException();
+            throw new StackException("Helloworld");
         } else {
             array[counter] = value;
             counter++;
@@ -181,5 +182,6 @@ public class StackComputer {
 
         comp.sub();
         System.out.println(comp.pop()); // should be -25
+
     }
 }
